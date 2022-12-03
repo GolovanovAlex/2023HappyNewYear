@@ -2,7 +2,7 @@ let day = document.getElementById('day');
 let hour = document.getElementById('hour');
 let minute = document.getElementById('minute');
 let second = document.getElementById('second');
-let endDate = new Date(2021, 0, 1, 00, 00);
+let endDate = new Date(2023, 0, 1, 00, 00);
 let endTime = endDate.getTime();
 
 function countdown() {

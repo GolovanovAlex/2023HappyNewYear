@@ -82,6 +82,9 @@ body {
 }
 
 @media (max-width: 550px) {
+  body {
+    background-position: 40%;
+  }
   .container {
     padding-top: 16vh;
   }
