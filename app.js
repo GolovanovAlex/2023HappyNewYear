@@ -17,6 +17,18 @@ function countdown() {
 
   if (endTime < todayDate) {
     clearInterval(i);
-    document.querySelector('.Text');
+    document.querySelector('.Text').innerHTML = `<h1>Happy New Year!!!</h1>`;
+    document.querySelector('').innerHTML = `<h1>2023</h1>`;
+  } else {
+    let daysLeft = Math.floor(allTime / oneDay);
+    let hoursLeft = Math.floor((allTime % oneDay) / oneHour);
+    let minutesLeft = Math.floor((allTime % oneHour) / oneMinute);
+    let secondsLeft = Math.floor((allTime % oneMinute) / 1000);
+    day.textContent = addZero(daysLeft);
+    hour.textContent = addZero(hoursLeft);
+    minute.textContent = addZero(minutesLeft);
+    second.textContent = addZero(secondsLeft);
   }
 }
+let i = setInterval(countdown, 1000);
+countdown();
