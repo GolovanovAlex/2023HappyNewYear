@@ -14,11 +14,11 @@ body {
   font-family: 'Vollkorn', serif;
   font-weight: 700;
   background-image: url(images/bg2022.jpg);
-  background-position: center right;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: #280000;
-  text-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
 }
 .main {
   min-height: 100vh;
@@ -37,10 +37,18 @@ body {
   font-size: 160px;
   line-height: 150px;
 }
+.main.newyear .title__h1 {
+  font-size: 56px;
+  line-height: 50px;
+}
 .title__h2 {
   font-size: 56px;
   line-height: 60px;
   margin-bottom: 60px;
+}
+.main.newyear .title__h2 {
+  font-size: 160px;
+  line-height: 130px;
 }
 .text__descr {
   font-size: 35px;
@@ -55,6 +63,10 @@ body {
   text-align: center;
 }
 .countdown__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100px;
 }
 .countdown__number {
@@ -67,4 +79,46 @@ body {
   font-size: 20px;
   font-weight: 400;
   line-height: 20px;
+}
+
+@media (max-width: 550px) {
+  .container {
+    padding-top: 16vh;
+  }
+  .title__h1 {
+    font-size: 90px;
+    line-height: 90px;
+  }
+  .title__h2 {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 40px;
+  }
+  .text__descr {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 5px;
+  }
+  .countdown {
+    gap: 0 25px;
+  }
+  .countdown__item {
+    width: 50px;
+  }
+  .countdown__number {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .countdown__desc {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .main.newyear .title__h1 {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .main.newyear .title__h2 {
+    font-size: 90px;
+    line-height: 90px;
+  }
 }

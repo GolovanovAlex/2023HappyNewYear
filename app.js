@@ -2,7 +2,7 @@ let day = document.getElementById('day');
 let hour = document.getElementById('hour');
 let minute = document.getElementById('minute');
 let second = document.getElementById('second');
-let endDate = new Date(2023, 0, 1, 00, 00);
+let endDate = new Date(2021, 0, 1, 00, 00);
 let endTime = endDate.getTime();
 
 function countdown() {
@@ -17,8 +17,10 @@ function countdown() {
 
   if (endTime < todayDate) {
     clearInterval(i);
-    document.querySelector('.Text').innerHTML = `<h1>Happy New Year!!!</h1>`;
-    document.querySelector('').innerHTML = `<h1>2023</h1>`;
+    let text = document.querySelector('.main');
+    text.classList.add('newyear');
+    document.querySelector('.title__h1').innerHTML = 'Happy New Year!!!';
+    document.querySelector('.title__h2').innerHTML = '2023';
   } else {
     let daysLeft = Math.floor(allTime / oneDay);
     let hoursLeft = Math.floor((allTime % oneDay) / oneHour);
