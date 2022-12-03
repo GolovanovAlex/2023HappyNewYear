@@ -4,37 +4,67 @@
   margin: 0;
   box-sizing: border-box;
 }
+h1,
+h2,
+h4 {
+  padding: 0;
+  margin: 0;
+}
 body {
   font-family: 'Vollkorn', serif;
+  font-weight: 700;
   background-image: url(images/bg2022.jpg);
-  background-position: center;
+  background-position: center right;
   background-repeat: no-repeat;
   background-size: cover;
+  color: #280000;
+  text-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
 }
 .main {
   min-height: 100vh;
 }
 .container {
-}
-.Text {
-  text-align: center;
-}
-.title {
-}
-.title__h1 {
-}
-.title_h2 {
-}
-.text__descr {
-}
-.countdown {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  padding-top: 15vh;
+}
+.text {
+  text-align: center;
+}
+.title__h1 {
+  font-size: 160px;
+  line-height: 150px;
+}
+.title__h2 {
+  font-size: 56px;
+  line-height: 60px;
+  margin-bottom: 60px;
+}
+.text__descr {
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+.countdown {
+  display: flex;
+  gap: 0 40px;
+  text-align: center;
 }
 .countdown__item {
+  width: 100px;
 }
 .countdown__number {
+  display: block;
+  font-size: 68px;
+  line-height: 70px;
 }
 .countdown__desc {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
 }
