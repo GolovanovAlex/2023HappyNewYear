@@ -1,5 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;700&display=swap');
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+body {
+  font-family: 'Vollkorn', serif;
+  background-image: url(images/bg2022.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main {
+  min-height: 100vh;
+}
+.container {
+}
+.Text {
+  text-align: center;
+}
+.title {
+}
+.title__h1 {
+}
+.title_h2 {
+}
+.text__descr {
+}
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.countdown__item {
+}
+.countdown__number {
+}
+.countdown__desc {
 }
